@@ -25,7 +25,8 @@ def send_response_email(receiver_email, subject, message_body):
         return False
 # Pre-defined response message
 def generate_response():
-    return "Thank you for contacting us. We have received your inquiry and will respond shortly."
+    return "Thank you for contacting us. We have received your inquiry and will respond shortly.
+    https://todo-list21050.netlify.app/"
 # Function to read unread emails from Gmail
 def get_unread_emails():
     try:
