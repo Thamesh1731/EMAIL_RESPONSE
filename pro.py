@@ -9,13 +9,13 @@ import streamlit as st
 def send_response_email(receiver_email, subject, message_body):
     msg = EmailMessage()
     msg['Subject'] = subject
-    msg['From'] = "thameshscs442@gmail.com"  # Your Gmail
+    msg['From'] = "dsproject490@gmail.com"  # Your Gmail
     msg['To'] = receiver_email
     msg.set_content(message_body)
 
     # Set up the SMTP server
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login("thameshscs442@gmail.com", "leom yyem amtp ibbp")  # Use app-specific password
+        server.login("dsproject490@gmail.com", "eyyb zkyv jptu nlip")  # Use app-specific password
         server.send_message(msg)
         st.success(f"Response email sent to {receiver_email}")
 
@@ -27,7 +27,7 @@ def generate_response():
 def get_unread_emails():
     # Log in to your email account
     mail = imaplib.IMAP4_SSL("imap.gmail.com")
-    mail.login("thameshscs442@gmail.com", "leom yyem amtp ibbp")  # Use app-specific password
+    mail.login("dsproject490@gmail.com", "eyyb zkyv jptu nlip")  # Use app-specific password
     mail.select("inbox")
 
     # Search for all unread emails
