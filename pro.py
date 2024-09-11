@@ -12,7 +12,7 @@ def send_email(customer_email, subject, message_body):
 
     
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login("thameshscs442@gmail.com", "Thamesh@2006")  # Replace with your email credentials
+        server.login("thameshscs442@gmail.com", "leom yyem amtp ibbp")  # Replace with your email credentials
         server.send_message(msg)
         st.success(f"Response email sent to {customer_email}")
 
