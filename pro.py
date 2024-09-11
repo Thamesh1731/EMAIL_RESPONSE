@@ -82,6 +82,6 @@ if st.button('Start Automatic Email Response'):
     st.write("Processing unread emails and sending automatic responses...")
 
     send_email(customer_email, "Thank you for contacting us", response_message)
-    else:
-        st.error("Please enter a valid email address.")
+else:
+    st.error("Please enter a valid email address.")
 
