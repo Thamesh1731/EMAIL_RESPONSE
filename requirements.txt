@@ -1,1 +1,5 @@
 streamlit
+imaplib2
+smtplib
+email
+
