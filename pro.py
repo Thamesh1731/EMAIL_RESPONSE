@@ -4,8 +4,8 @@ from email.message import EmailMessage
 import email
 from queue import Queue
 import streamlit as st
-GMAIL_USER = "dsproject490@gmail.com"  
-GMAIL_PASS = "eyyb zkyv jptu nlip"     
+GMAIL_USER = "EMAIL"  
+GMAIL_PASS = "EMAIL-APP-PASSWORD"     
 def send_response_email(receiver_email, subject, message_body):
     msg = EmailMessage()
     msg['Subject'] = subject
@@ -68,5 +68,6 @@ if st.session_state['sent_emails']:
     st.write("Response emails sent to the following addresses:")
     for email in st.session_state['sent_emails']:
         st.write(email)
+
 
 
